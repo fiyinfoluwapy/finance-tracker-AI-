@@ -16,33 +16,35 @@ import {
 } from 'lucide-react';
 
 const getCategoryIcon = (category) => {
+  const iconProps = { size: 20, className: "text-blue-600" }; // set color and size
   switch (category) {
     case 'Food':
-      return <ShoppingCartIcon size={18} />;
+      return <ShoppingCartIcon {...iconProps} />;
     case 'Rent':
-      return <HomeIcon size={18} />;
+      return <HomeIcon {...iconProps} />;
     case 'Utilities':
-      return <UtilityPoleIcon size={18} />;
+      return <UtilityPoleIcon {...iconProps} />;
     case 'Entertainment':
-      return <SmileIcon size={18} />;
+      return <SmileIcon {...iconProps} />;
     case 'Transportation':
-      return <CarIcon size={18} />;
+      return <CarIcon {...iconProps} />;
     case 'Shopping':
-      return <ShoppingBagIcon size={18} />;
+      return <ShoppingBagIcon {...iconProps} />;
     case 'Healthcare':
-      return <HeartPulseIcon size={18} />;
+      return <HeartPulseIcon {...iconProps} />;
     case 'Education':
-      return <GraduationCapIcon size={18} />;
+      return <GraduationCapIcon {...iconProps} />;
     case 'Salary':
-      return <BriefcaseIcon size={18} />;
+      return <BriefcaseIcon {...iconProps} />;
     case 'Investment':
-      return <TrendingUpIcon size={18} />;
+      return <TrendingUpIcon {...iconProps} />;
     case 'Gift':
-      return <GiftIcon size={18} />;
+      return <GiftIcon {...iconProps} />;
     default:
-      return <MoreHorizontalIcon size={18} />;
+      return <MoreHorizontalIcon {...iconProps} />;
   }
 };
+
 
 const formatDate = (date) => {
   return new Date(date).toLocaleDateString('en-US', {
