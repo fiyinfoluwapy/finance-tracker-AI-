@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import FeaturesSection from "./components/features";
+import TryItNow from "./components/tryout";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <Hero />
         <FeaturesSection />
+        <TryItNow />
         {children}
       </body>
     </html>
