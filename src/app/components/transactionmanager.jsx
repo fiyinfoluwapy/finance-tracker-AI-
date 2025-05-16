@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import TransactionForm from './TransactionForm'
-import TransactionList from './TransactionList'
-import BalanceSummary from './BalanceSummary'
-
+import TransactionForm from './transactionform'
+import TransactionList from './transactionlist'
+import BalanceSummary from './balancesummary'
 const TransactionManager = () => {
   const [transactions, setTransactions] = useState([])
 
