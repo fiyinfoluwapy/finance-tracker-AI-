@@ -4,6 +4,8 @@ import TransactionForm from './transactionform'
 import TransactionList from './transactionlist'
 import BalanceSummary from './balancesummary'
 import SpendingChart from './spendingchart'
+import BalanceTrend from './balancetrend'
+import CategoryBreakdown from './categorybreakdown'
 
 const TransactionManager = () => {
   const [transactions, setTransactions] = useState([])
@@ -55,6 +57,8 @@ const TransactionManager = () => {
         >
           <TransactionList transactions={transactions} />
           <SpendingChart transactions={transactions} />
+          <BalanceTrend transactions={transactions} />
+          <CategoryBreakdown transactions={transactions} />
         </motion.div>
       </div>
     </div>
