@@ -49,7 +49,7 @@ const BalanceTrend = ({ transactions }) => {
             <Line
               type="monotone"
               dataKey="balance"
-              stroke="#3b82f6" // Tailwind blue-500
+              stroke="#3b82f6" 
               strokeWidth={3}
               dot={{ r: 4 }}
               activeDot={{ r: 6 }}

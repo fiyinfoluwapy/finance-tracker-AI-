@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
             <div className="bg-white/80 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 hover:shadow-lg transition-all">
               <div className="bg-blue-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                {/* Add your icon here, if needed */}
+                {/*  icon  */}
                 <LineChartIcon className="h-6 w-6 text-blue-600" />
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">

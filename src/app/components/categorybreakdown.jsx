@@ -14,7 +14,7 @@ const COLORS = [
 ]
 
 const CategoryBreakdown = ({ transactions }) => {
-  // Group expenses by category and sum amounts
+  // To group expenses by category and sum amounts
   const data = useMemo(() => {
     const expenseTransactions = transactions.filter((t) => t.amount < 0)
     const categoryMap = {}
