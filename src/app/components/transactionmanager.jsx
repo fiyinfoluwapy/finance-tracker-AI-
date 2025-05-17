@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import TransactionForm from './transactionform'
 import TransactionList from './transactionlist'
 import BalanceSummary from './balancesummary'
+import SpendingChart from './spendingchart'
 
 const TransactionManager = () => {
   const [transactions, setTransactions] = useState([])
@@ -53,6 +54,7 @@ const TransactionManager = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
         >
           <TransactionList transactions={transactions} />
+          <SpendingChart transactions={transactions} />
         </motion.div>
       </div>
     </div>
