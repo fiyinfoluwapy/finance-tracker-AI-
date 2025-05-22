@@ -14,13 +14,12 @@ const COLORS = [
 ]
 
 const CategoryBreakdown = ({ transactions }) => {
-  // To group expenses by category and sum amounts
   const data = useMemo(() => {
     const expenseTransactions = transactions.filter((t) => t.amount < 0)
     const categoryMap = {}
 
     expenseTransactions.forEach(({ category, amount }) => {
-      if (!category) return // skip if no category
+      if (!category) return
       if (!categoryMap[category]) categoryMap[category] = 0
       categoryMap[category] += Math.abs(amount)
     })
@@ -59,7 +58,8 @@ const CategoryBreakdown = ({ transactions }) => {
             cy="50%"
             outerRadius={100}
             fill="#8884d8"
-            label={(entry) => entry.name}
+            // Labels are removed:
+            label={false}
           >
             {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
