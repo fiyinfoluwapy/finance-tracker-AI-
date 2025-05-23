@@ -15,7 +15,7 @@ const AiResponseCard = ({ role, content }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <p className="text-sm text-gray-800 whitespace-pre-line">{content}</p>
+      <p className="text-sm text-black whitespace-pre-line">{content}</p>
     </motion.div>
   )
 }
